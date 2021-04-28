@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>my project</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="master.css">
+</head>
+<body>
+    <div> <h1>students</h1></div>
+    <form action="http://localhost:3000/api/students" method="POST">
+        name:<input type="text" name="name"> 
+        code:<input type="text" name="code"> 
+        <input type="submit" > 
+    </form>
+    <br>
+    <br>
+    <br>
+    <div> <h1>courses</h1></div>
+    <form action="http://localhost:3000/api/courses" method="POST" id="courseForm">  
+        name:<input type="text" name="name"> 
+        code:<input type="text" name="code"> 
+        <input type="submit" > 
+    </form>
+    Description:<textarea name="description" form="courseForm" cols="30" rows="15"> </textarea>
+</body>
